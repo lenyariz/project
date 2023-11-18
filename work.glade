@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="Window">
+    <property name="can-focus">False</property>
+    <property name="default-width">600</property>
+    <property name="default-height">700</property>
+    <signal name="destroy" handler="close_window" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="Container1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkSpinButton" id="SpinButton1">
+            <property name="width-request">30</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <signal name="value-changed" handler="button_change" object="DrawGraph" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Label1">
+            <property name="name">Label1</property>
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Частота
+</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="SpinButton2">
+            <property name="width-request">30</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <signal name="value-changed" handler="button_change" object="DrawGraph" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">260</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Label2">
+            <property name="width-request">100</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Амплитуда</property>
+          </object>
+          <packing>
+            <property name="x">268</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="SpinButton3">
+            <property name="width-request">30</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <signal name="value-changed" handler="button_change" object="DrawGraph" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">500</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Label3">
+            <property name="width-request">100</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Фаза</property>
+          </object>
+          <packing>
+            <property name="x">510</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkDrawingArea" id="DrawGraph">
+            <property name="width-request">700</property>
+            <property name="height-request">400</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <signal name="draw" handler="on_draw" object="SpinButton1" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">250</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
